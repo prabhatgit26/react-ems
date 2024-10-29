@@ -16,7 +16,11 @@ const Login = ({handleLogin}) => {
         setPassword("");
     }
 
-  return (
+  return (<>
+    
+    <div className='flex items-center justify-center'>
+      <h1 className='text-slate-200 text-3xl font-semibold mb-[-200px] hover:text-orange-600'>ADMIN & EMPLOYEES LOGIN PANEL</h1>
+    </div>
     <div className='flex h-screen w-screen items-center justify-center'>
       <div className='border-2 border-emerald-600 p-20 rounded-xl'>
         <form onSubmit={(e)=>{submitHandler(e)}} action="" className='flex flex-col items-center justify-center'>
@@ -26,7 +30,7 @@ const Login = ({handleLogin}) => {
         </form>
       </div>
     </div>
-  )
+    </>)
 }
 
 export default Login
